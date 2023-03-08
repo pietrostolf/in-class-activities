@@ -1,0 +1,23 @@
+>>> name  = "Pietro"
+>>> name
+'Pietro'
+>>> country="Brazil"  
+>>> age = 28
+>>> hourly_wage = 18
+>>> satisfied = True
+>>> daily_wage = hourly_wage*8
+>>> daily_wage
+144
+>>> print(name + " lives in " + country + " and earns " + hourly_wage + " an hour.")  
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> print(name + " lives in " + country + " and earns " + str(hourly_wage) + " an hour.")  
+Pietro lives in Brazil and earns 18 an hour.
+>>> print(f"{name} is not {satified} with {daily_wage} per day")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'satified' is not defined
+>>> print(f"{name} is not {satisfied} with {daily_wage} per day") 
+Pietro is not True with 144 per day
+>>>
